@@ -10,6 +10,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column; /* Permet de centrer verticalement tout le contenu */
       height: 100vh;
       margin: 0;
     }
@@ -39,6 +40,23 @@
     .button-container a:nth-child(5) img {
       max-height: 700px;
     }
+
+    /* Style pour l'image en dessous des 5 autres images */
+    .bottom-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px; /* Espacement entre les images du haut et celle du bas */
+    }
+
+    .bottom-container a img {
+      max-height: 500px; /* Taille personnalisable pour l'image du bas */
+      transition: transform 0.3s; /* Transition fluide lors de l'agrandissement */
+    }
+
+    /* Agrandir au survol */
+    .bottom-container a img:hover {
+      transform: scale(1.1); /* Agrandissement de l'image à 10% */
+    }
   </style>
 </head>
 <body>
@@ -66,6 +84,13 @@
     <!-- Image 2 -->
     <a href="https://anngeldouche.github.io/MoriBlog/">
       <img src="https://github.com/Anngeldouche/Accueil_BlogdePotes-/blob/main/tetescopains(2).png?raw=true" alt="Cliquez ici pour visiter MoriBlog">
+    </a>
+  </div>
+
+  <!-- Image RuNews en dessous -->
+  <div class="bottom-container">
+    <a href="https://anngeldouche.github.io/TheRuNewsBlog/">
+      <img src="https://github.com/Anngeldouche/Accueil_BlogdePotes-/blob/main/RuNews.png?raw=true" alt="Cliquez ici pour visiter TheRuNewsBlog">
     </a>
   </div>
 </body>
