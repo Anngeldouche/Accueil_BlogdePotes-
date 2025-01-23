@@ -18,9 +18,17 @@
       gap: 20px; /* Espacement entre les boutons */
     }
     img {
-      max-width: 100%;
-      height: auto;
+      max-height: 150px; /* Limite la hauteur de toutes les images à 150px */
+      width: auto;
       cursor: pointer;
+    }
+    /* Agrandissement de l'image la plus à gauche de 5% */
+    .button-container a:first-child img {
+      transform: scale(1.05); /* Agrandit l'image de 5% */
+    }
+    /* Réduction de l'image tetescopains(3) de 40% */
+    .button-container a:nth-child(2) img {
+      transform: scale(); /* Réduit l'image de 40% */
     }
   </style>
 </head>
